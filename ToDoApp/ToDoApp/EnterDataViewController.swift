@@ -13,8 +13,6 @@ class EnterDataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func submitButtonTapped(_ sender: Any) {
@@ -32,16 +30,5 @@ class EnterDataViewController: UIViewController {
         note.note = enterDataTextField.text
         
         CoreDataManager.shared.saveContext()
-        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

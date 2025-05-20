@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func enterDataButtonTapped(_ sender: Any) {
@@ -25,6 +24,5 @@ class ViewController: UIViewController {
         let vc = sb.instantiateViewController(withIdentifier: "LookUpDataViewController")
         navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
 
